@@ -3,13 +3,13 @@
     function InsertUser(){
         global $con;
         if(isset($_POST['sign_up'])){
-//            
-            $id=$_POST['u_id'];
-            $name=$_POST['u_name'];
-            $pass=$_POST['u_pass'];
-            $email=$_POST['u_email'];
-            $year=$_POST['u_year'];
-            $date=date("m-d-y");
+//          
+            $id=mysqli_real_escape_string($con,$_POST['u_id']);
+            $name=mysqli_real_escape_string($con,$_POST['u_name']);
+            $pass=mysqli_real_escape_string($con,$_POST['u_pass']);
+            $email=mysqli_real_escape_string($con,$_POST['u_email']);
+            $year=mysqli_real_escape_string($con,$_POST['u_year']);
+          
             $status="unverified";
             $posts="No";
             $get_email="select * from users where user_email='$email'";
@@ -25,11 +25,14 @@
                 exit();
             }
             else{
-                $run_insert="inser into users (user_id,user_name,user_pass,user_email,user_image,user_year,last_login,register_date,status,post) values ('$id','$name','$pass','$email','default.jpg','$year','$date','$date','$status','$posts')";
-            }
+                $insert="insert into users (user_id,user_name,user_pass,user_email,user_image,user_year,last_login,register_date,status,post) VALUES ('$id','$name','$pass','$email','default.jpg','$year',NOW(),NOW(),'$status','$posts')";
+                $run_insert=mysqli_query($con,$insert);
+            
             if($run_insert){
                 echo "<script>alert('Registration successful!')</script>";
+                echo"<script>window.open('home.php','_self')</script>";
             }
         }
+    }
     }
 ?>
