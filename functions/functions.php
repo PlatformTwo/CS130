@@ -25,11 +25,13 @@
                 exit();
             }
             else{
-                $run_insert="inser into users (user_id,user_name,user_pass,user_email,user_image,user_year,last_login,register_date,status,post) values ('$id','$name','$pass','$email','default.jpg','$year','$date','$date','$status','$posts')";
-            }
+                $insert="insert into users (user_id,user_name,user_pass,user_email,user_image,user_year,last_login,register_date,status,post) VALUES ('$id','$name','$pass','$email','default.jpg','$year','$date','$date','$status','$posts')";
+                $run_insert=mysqli_query($con,$insert);
+            
             if($run_insert){
                 echo "<script>alert('Registration successful!')</script>";
             }
         }
+    }
     }
 ?>
