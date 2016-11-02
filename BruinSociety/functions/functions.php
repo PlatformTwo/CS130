@@ -54,10 +54,44 @@
 
         }
     }
-    function PrintSocietyPosts($id)
+    /* Prints all of a Society's posts, unsorted. */
+    /* HOW TO SORT: 0 = default sorting, 1 = descending date, 2 = ascending date, 3 = ascending poster username, 4 = descending poster username. */
+    function PrintSocietyPosts($id, $sortOpt = 0)
     {
         global $con;
-        $query = "select * from posts where society_id=$id";
+        if(!$id)
+        {
+            die ("Invalid society id provided to Print Society Posts");   
+        }
+        $query;
+        switch($sortOpt)
+        {
+            case 0:
+                print "Default Sorting:<br>";
+                $query = "select * from posts where society_id=$id";
+                break;
+            case 1:
+                print "Descending Date Sorting:<br>";
+                $query = "select * from posts where society_id=$id order by date desc";
+                break;
+            case 2:
+                print "Ascending Date Sorting:<br>";
+                $query = "select * from posts where society_id=$id order by date asc";
+                break;
+            case 3:
+                print "Ascending Name Sorting:<br>";
+                $query = "select * from posts, users where posts.society_id=$id and users.user_id = posts.poster_id order by users.user_name asc";
+                break;
+            case 4:
+                print "Descending Name Sorting:<br>";
+                $query = "select * from posts, users where posts.society_id=$id and users.user_id = posts.poster_id order by users.user_name desc";
+                break;
+            default:
+                print "Invalid sorting option provided.";
+                $query = "select * from posts where society_id=$id";
+                break;
+        }
+
         $result = mysqli_query($con,$query);
         while($row = mysqli_fetch_assoc($result))
         {
@@ -68,5 +102,10 @@
             print "Posted on $row[date] by $poster";
             print "<br><br>";
         }
+        return;
+    }
+    function sortPosts($sortOpt)
+    {
+
     }
 ?>
