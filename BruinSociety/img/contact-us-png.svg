@@ -1,0 +1,20 @@
+<?xml version="1.0"?><svg width="500" height="270" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <title>contact_us.png</title>
+ <defs>
+  <linearGradient id="linearGradient18943-8">
+   <stop stop-color="#ffffff" id="stop18945-8" offset="0"/>
+   <stop stop-color="#ffffff" stop-opacity="0" id="stop18947-2" offset="1"/>
+  </linearGradient>
+  <linearGradient xlink:href="#linearGradient18943-8" id="linearGradient3534" x1="-0.058473" y1="-0.286161" x2="0.500204" y2="0.500194"/>
+ </defs>
+ <metadata id="metadata3394">image/svg+xml</metadata>
+ <g>
+  <title>Layer 1</title>
+  <g display="inline" id="layer1"/>
+  <g display="inline" id="layer5">
+   <rect fill="#ff7f00" ry="37.181026" y="77.713053" x="11.033951" height="121.573886" width="477.932065" id="rect17756"/>
+  </g>
+  <path fill="url(#linearGradient3534)" id="rect17756-0" d="m120.971222,52.797939l312.914764,-0.783344c35.154175,0.577091 76.862976,-0.019505 50.401367,6.24725c-26.461578,6.26675 -399.74511,119.035625 -439.201199,167.302151c0,0 -34.537095,-13.724976 -34.537095,-23.470551l0,-121.52063c2.703204,-10.652374 5.357313,-17.116451 13.944863,-20.961407c8.587547,-3.844971 9.242363,-7.420856 38.879257,-6.813469l70.930943,0l-13.332886,0l-0.000015,0z"/>
+  <text transform="matrix(3.27684 0 0 4.11136 53.452 -124.799)" xml:space="preserve" text-anchor="middle" font-family="Arial" font-size="18" id="svg_1" y="69.933931" x="59.961904" stroke-width="0" stroke="#000000" fill="#ffffff">CONTACT US</text>
+ </g>
+</svg>
