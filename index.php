@@ -6,7 +6,7 @@ include ("functions/functions.php");
     <head>
         <title> My Social Network</title>
     <link rel="stylesheet" href="styles/style.css" media="all"/>
-    <head>
+    </head>
 <body>
     <!--container starts-->
     <div class="container">

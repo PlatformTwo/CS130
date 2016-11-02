@@ -1,4 +1,8 @@
 <?php
+    /* PHP warns you if you are using an undeclared variable. This happens very often if you are referencing columns from MySQL Search Results, so we turn that off here -Andrew */
+    error_reporting(E_ALL ^ E_NOTICE);
+
+
     $con=mysqli_connect("127.0.0.1","root","","social_network") or die ("Connection was not established");
     function InsertUser(){
         global $con;
@@ -34,5 +38,20 @@
             }
         }
     }
+    }
+
+    function SearchSocieties(){
+        global $con;
+        if(isset($_POST['search'])){
+            $soc_name = mysqli_real_escape_string($con,$_POST['soc_name']);
+            $query="select id from societies where name='$soc_name'";
+            $result=mysqli_query($con,$query);
+            if(!$result)
+            {
+                print "Query failed";
+            }
+            return mysqli_fetch_assoc($result)[id];
+
+        }
     }
 ?>
