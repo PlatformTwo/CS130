@@ -54,4 +54,19 @@
 
         }
     }
+    function PrintSocietyPosts($id)
+    {
+        global $con;
+        $query = "select * from posts where society_id=$id";
+        $result = mysqli_query($con,$query);
+        while($row = mysqli_fetch_assoc($result))
+        {
+            $poster_query="select user_name from users where user_id = $row[poster_id]";
+            $poster_result=mysqli_query($con,$poster_query);
+            $poster=mysqli_fetch_assoc($poster_result)[user_name];
+            print "$row[title]<br>";
+            print "Posted on $row[date] by $poster";
+            print "<br><br>";
+        }
+    }
 ?>
