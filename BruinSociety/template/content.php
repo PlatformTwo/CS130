@@ -10,33 +10,33 @@
                     <h2>Sign Up Here</h2>
                     <table>
                         <tr>
-                            <td align="right">UID:</td>
+                            <td align="right"><font color="white"><b>UID:</b></font></td>
                             <td>
                             <input type="text" name="u_id" placeholder="Enter your university ID" required="required"/>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">Name:</td>
+                            <td align="right"><font color="white"><b>Name:</b></font></td>
                             <td>
                             <input type="text" name="u_name" placeholder="Enter your name" required="required"/>
                             </td>
                         </tr>
                         
                         <tr>
-                            <td align="right">Password:</td>
+                            <td align="right"><font color="white"><b>Password:</b></font></td>
                             <td>
                             <input type="text" name="u_pass" placeholder="Enter your password" required="required"/>
                             </td>
                         </tr>
                         
                         <tr>
-                            <td align="right">Email:</td>
+                            <td align="right"><font color="white"><b>Email:</b></font></td>
                             <td>
                             <input type="email" name="u_email" placeholder="Enter your email" required="required"/>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right">Year:</td>
+                            <td align="right"><font color="white"><b>Year:</b></font></td>
                             <td>
                             <select type="text" name="u_year"  required="required">
                             <option>Select year</option>
@@ -48,9 +48,8 @@
                             </td>
                         </tr>
                        <tr>
-                           <td align="right">user agreement:</td>
-                         <td>
-                               
+                           <td align="right"><font color="white"><b>User Agreement:</b></font></td>
+                               <td>
                           <select type="Text" name="u_agree"  required="required">
                           <option>Agree</option>
                            <option>Disagree</option>
