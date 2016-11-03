@@ -24,6 +24,12 @@ Yomer-Stylish Landing Page Template
 		<ul class="menu">
 		<li class="btMenu">
 		<a href="javascript:void(0)">MENU</a></li>
+			
+		<div style= 'text-align:right'>
+		<font color="white">
+		<h4> Welcome, <?php echo $_SESSION['user_email']; /*$_SESSION['user_name'];*/ ?> </h4>
+		<h4> Profile </h4> </font> </div> 
+			
 		<li class="menuItem"><a href="index2.php">Home</a></li>
 		<li class="menuItem"><a href="#whychose">Functions</a></li>
 		<li class="menuItem"><a href="#mission">Mission</a></li>
