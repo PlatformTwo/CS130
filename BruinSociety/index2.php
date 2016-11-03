@@ -1,8 +1,13 @@
+<?php
+session_start()
+?>
+
 <<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
+
 <title>
 Yomer-Stylish Landing Page Template
 </title>
@@ -18,19 +23,18 @@ Yomer-Stylish Landing Page Template
 </head>
 
 <body>
- 
+
 <div class="nav">
 		<div class='logo'></div>
 		<ul class="menu">
 		<li class="btMenu">
 		<a href="javascript:void(0)">MENU</a></li>
-			
+		
 		<div style= 'text-align:right'>
 		<font color="white">
 		<h4> Welcome, <?php echo $_SESSION['user_email']; /*$_SESSION['user_name'];*/ ?> </h4>
-		<h4> Profile </h4> </font> </div> 
-			
-		<li class="menuItem"><a href="index2.php">Home</a></li>
+		<h4><a href="profile.php"> Profile </a> </h4> </font> </div> 
+ 		<li class="menuItem"><a href="index2.php">Home</a></li>
 		<li class="menuItem"><a href="#whychose">Functions</a></li>
 		<li class="menuItem"><a href="#mission">Mission</a></li>
 		<li class="menuItem"><a href="#about">Features</a></li>
