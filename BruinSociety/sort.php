@@ -20,8 +20,7 @@
 		</form>
 
 		</p>
-
-		<?php
+	<?php
 			$sortOpt=0;
 			if(isset($_POST['sort']))
 			{
@@ -50,3 +49,5 @@
 		<br><br><p>Andrew Lin</p>
 	</body>
 </html>
+
+		
