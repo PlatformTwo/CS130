@@ -31,7 +31,7 @@ Yomer-Stylish Landing Page Template
 <!--		<li class="menuItem"><a href="login.php">Register</a></li>-->
 <!--		<li class="menuItem"><a href="login.php">Login</a></li>-->
 		<li class="menuItem"><a href="http://my.ucla.edu/">Contact us</a></li>
-		
+		<button name="login">Sign-out</button> 
 		</ul>
 <!--    <link rel="stylesheet" href="styles/css_login.css" media="all"/>-->
 <!--
