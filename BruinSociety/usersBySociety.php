@@ -11,6 +11,13 @@
 			<div id="head_wrap">
 			</div>
 			<div id="content">
+
+                <h2>Current Societes<br></h2>
+
+                <?php
+                    listSocieties();
+                ?>
+
 				<form action="" method="post">
 					<h2>Find members of a society given a society id</h2>
 					<input type="text" name="s_id" placeholder="Enter the society id" require="required" />

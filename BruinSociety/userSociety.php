@@ -2,8 +2,23 @@
     // This php file is responsible for requests that involves handling the relationship between societies and members
     $con=mysqli_connect("127.0.0.1","root","","social_network") or die ("Connection was not established");
 
-    // TODO: create APIs for join/ quit a society
     // TODO: add API to check if a user is in a society
+
+    /**
+    *
+    *
+    */
+    function listSocieties() {
+        global $con;
+        $query = "select * from societies";
+        $run_query = mysqli_query($con, $query);
+        while($row = mysqli_fetch_assoc($run_query)) {   
+            print"<br>";
+            print "$row[id] ";
+            print "$row[name]";
+            print "<br><br>";
+        }
+    }
 
     /**
     * This function is used for joining a society.
