@@ -55,6 +55,11 @@
 
     function getQuery($sortOpt, $filterOpt)
     {
+    	switch ($filterOpt)
+    	{
+    		case "quarter":
+    			print ""
+    	}
         switch($sortOpt)
         {
             case 0:
