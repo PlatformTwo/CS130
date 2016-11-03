@@ -1,7 +1,7 @@
-<?php 
+<?php
 /**
+ * 
  * @author Andrew Lin
- * @version 1.0
  * The functions in this file are part of our PHLibrary, or our Post Handling Library. 
  * The functions currently included are PrintSocietyPosts, getSocID, getQuery, and curQtr. 
  * More specific documentation is available below.
@@ -10,27 +10,6 @@
 
 
 include_once "functions/functions.php";
-/**
- * @api
- * @param type $socName 
- * @return 
- */
-function printWithoutSortingorFiltering($socName)
-{
-    PrintSocietyPosts($socName);
-}
-function printOnlySort($socName, $sortOpt)
-{
-    PrintSocietyPosts($socName, $sortOpt);
-}
-function printOnlyFilter($socName, $filterOpt, $filterArg="none")
-{
-    PrintSocietyPosts($socName, $filterOpt, $filterArg);
-}
-function printSortAndFilter($socName, $sortOpt, $filterOpt, $filterArg ="none")
-{
-    PrintSocietyPosts($socName, $sortOpt, $filterOpt, $filterArg);
-}
 
 
 /**
