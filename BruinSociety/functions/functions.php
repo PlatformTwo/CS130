@@ -3,7 +3,7 @@
     error_reporting(E_ALL ^ E_NOTICE);
 
 
-    $con=mysqli_connect("127.0.0.1","root","","social_network") or die ("Connection was not established");
+    $con=mysqli_connect("localhost","root","","social_network") or die ("Connection was not established");
     function InsertUser(){
         global $con;
         if(isset($_POST['sign_up'])){
@@ -40,7 +40,7 @@
     }
     }
     /* Given the exact name of a Society, this function returns its id */
-    function SearchSocieties(){
+    function getSocID(){
         global $con;
         if(isset($_POST['search'])){
             $soc_name = mysqli_real_escape_string($con,$_POST['soc_name']);
@@ -54,43 +54,23 @@
 
         }
     }
+
+
     /* Prints all of a Society's posts, unsorted. */
     /* HOW TO SORT: 0 = default sorting, 1 = descending date, 2 = ascending date, 3 = ascending poster username, 4 = descending poster username. */
-    function PrintSocietyPosts($id, $sortOpt = 0)
+    /**
+     * Description
+     * @param int $id  
+     * @param type $sortOpt 
+     * @return type 
+     */
+    function PrintSocietyPosts($socName, $sortOpt = 0, $filterOpt = 0)
     {
         global $con;
-        if(!$id)
-        {
-            die ("Invalid society id provided to Print Society Posts");   
-        }
-        $query;
-        switch($sortOpt)
-        {
-            case 0:
-                print "Default Sorting:<br>";
-                $query = "select * from posts where society_id=$id";
-                break;
-            case 1:
-                print "Descending Date Sorting:<br>";
-                $query = "select * from posts where society_id=$id order by date desc";
-                break;
-            case 2:
-                print "Ascending Date Sorting:<br>";
-                $query = "select * from posts where society_id=$id order by date asc";
-                break;
-            case 3:
-                print "Ascending Name Sorting:<br>";
-                $query = "select * from posts, users where posts.society_id=$id and users.user_id = posts.poster_id order by users.user_name asc";
-                break;
-            case 4:
-                print "Descending Name Sorting:<br>";
-                $query = "select * from posts, users where posts.society_id=$id and users.user_id = posts.poster_id order by users.user_name desc";
-                break;
-            default:
-                print "Invalid sorting option provided.";
-                $query = "select * from posts where society_id=$id";
-                break;
-        }
+        $socID = getSocID($socName);
+
+
+        $query = getQuery($sortOpt, $filterOpt);
 
         $result = mysqli_query($con,$query);
         while($row = mysqli_fetch_assoc($result))
@@ -104,7 +84,7 @@
         }
         return;
     }
-    function sortPosts($sortOpt)
+    function filterPosts($filterOpt)
     {
 
     }
