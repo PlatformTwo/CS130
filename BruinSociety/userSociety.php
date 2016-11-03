@@ -6,8 +6,8 @@
     // TODO: add API to check if a user is in a society
 
     /**
-    * This function prints the ids and names of all the members in a society given the society id.
-    * @return void The function returns void and prints the member information of a certain society. 
+    * This function is used for joining a society.
+    * @return void The function returns void and inserts the user/society relation into the database. 
     */
     function joinSociety() {
         global $con;
