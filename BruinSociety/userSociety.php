@@ -15,8 +15,6 @@
             $u_id = mysqli_real_escape_string($con, $_POST['u_id']);
             $s_id = mysqli_real_escape_string($con, $_POST['s_id']);
             // This query checks if a user has already joined a society.
-            echo "$u_id<br>";
-            echo "$s_id<br>";
             $check_query = "select * from user_society where user_id = $u_id and id = $s_id";
             $run_check = mysqli_query($con, $check_query);
             $check = mysqli_num_rows($run_check);
@@ -30,6 +28,22 @@
                 }
             }
         }
+    }
+
+    /**
+    * This function is used for quiting a society.
+    * @return void The function returns void and deletes the user/society relation from the database. 
+    */
+    function quitSociety() {
+        global $con;
+        if(isset($_POST['quit'])) {
+            $u_id = mysqli_real_escape_string($con, $_POST['u_id']);
+            $s_id = mysqli_real_escape_string($con, $_POST['s_id']);
+            $query = "delete from user_society where user_id = $u_id and id = $s_id";
+            $run_query = mysqli_query($con, $query);
+            echo "<script>alert('You've quit!)</script>";
+        }
+        
     }
 
     /**
