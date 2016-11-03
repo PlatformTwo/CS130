@@ -23,6 +23,5 @@
 
 			</div>
 		</div>
-		<br><br><p>Andrew Lin</p>
 	</body>
 </html>
