@@ -31,6 +31,17 @@
 				    getSocieties();
 				?>
 
+                <form action="" method="post">
+					<h2>Join Society demo</h2>
+                    <body> Just a demo to demonstrate the API functionality, Front-end will be using J-query to call this API </body>
+					<input type="text" name="u_id" placeholder="Enter the user id" require="required" />
+                    <input type="text" name="s_id" placeholder="Enter the society demo" require="required" />
+					<button name="join">Join</button>
+				</form>
+                <?php
+                    joinSociety();
+                ?>
+
                 <?
                     getNumMembers(1);
                 ?>
