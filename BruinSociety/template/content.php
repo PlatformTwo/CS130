@@ -1,4 +1,5 @@
 //Author Sepideh Hashemzadeh 
+<?php
 <!--content area starts-->
         <div id="content">
             <div>
@@ -47,6 +48,17 @@
                             </td>
                         </tr>
                         <tr>
+                            <td align="right">user agreement:</td>
+                            <td>
+                                
+                            <select type="Text" name="u_agree"  required="required">
+                            <option>Agree</option>
+                            <option>Disagree</option>
+                            <td>
+                                <a href="http://www.deanofstudents.ucla.edu/Academic-Integrity"> User agreement form</a>
+                                </td>
+							</td>
+                        <tr>
                         <td>
                             <td colspan="6">
                         <button name="sign_up">Sign Up
@@ -61,3 +73,4 @@
             </div>
         </div>
         <!-- content area ends-->
+?>

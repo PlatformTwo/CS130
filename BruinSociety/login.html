@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <?php
+//main page that connects different components 
+//Author Sepideh Hashemzadeh
+<?php
+session_start();
 include ("functions/functions.php");
 ?>
+
 <html>
     <head>
         <title> My Social Network</title>
@@ -82,15 +87,10 @@ include ("functions/functions.php");
                             </td>
                         </tr>
 						<tr>
-<!--
-                            <td align="right">user agreement:</td>
-                            <td>
-                            <input type="Text" name="u_email" placeholder="Enter I agree" required="required"/>
--->
                             <td align="right">user agreement:</td>
                             <td>
                                 
-                            <select type="Text" name="u_email"  required="required">
+                            <select type="Text" name="u_agree"  required="required">
                             <option>Agree</option>
                             <option>Disagree</option>
                             <td>
