@@ -24,10 +24,10 @@ Yomer-Stylish Landing Page Template
 		<ul class="menu">
 		<li class="btMenu">
 		<a href="javascript:void(0)">MENU</a></li>
-		<li class="menuItem"><a href="index2.php">Home</a></li>
-		<li class="menuItem"><a href="#whychose">Functions</a></li>
-		<li class="menuItem"><a href="#mission">Mission</a></li>
-		<li class="menuItem"><a href="#about">Features</a></li>
+		<li class="menuItem"><a href="index.php">Home</a></li>
+		<li class="menuItem"><a href="#">Functions</a></li>
+		<li class="menuItem"><a href="#">Mission</a></li>
+		<li class="menuItem"><a href="#">Features</a></li>
 <!--		<li class="menuItem"><a href="login.php">Register</a></li>-->
 <!--		<li class="menuItem"><a href="login.php">Login</a></li>-->
 		<li class="menuItem"><a href="http://my.ucla.edu/">Contact us</a></li>
