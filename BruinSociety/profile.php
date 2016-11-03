@@ -2,6 +2,10 @@
 session_start()
 ?>
 
+<?php
+include ("userAttribute.php");
+?>
+
 <<<<<<< HEAD
 <!DOCTYPE html>
 <html>
@@ -66,13 +70,16 @@ Yomer-Stylish Landing Page Template
 	<br>
 	<br>
 	<br>
-	<br>
 	<div style= 'text-align:left'>
-	<h2> <font color="white"> Your Profile </h2>
-	<h3> Name			: <?php ?> </h3>
-	<h3> Email Address	: </h3>
-	<h3> Join Date		: </h3>
+	<p style="margin-left:5em;">
+	
+	<h2> <font color="white"> Profile </h2>
+	<img src="img/default.jpg" alt="def" width="140" height="140">
+	<h3> Name			: Wilsen Kosasih </h3>
+	<h3> Email Address	: <?php echo $_SESSION['user_email']; ?></h3>
+	<h3> Join Date		: 2016-11-03 </h3>
 	</font>
+	</p>
 	</div>
     <?php
 //main page that connects different components 
