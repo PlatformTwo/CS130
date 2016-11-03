@@ -69,15 +69,15 @@ Yomer-Stylish Landing Page Template
     <td>
 	<br>
 	<br>
-	<br>
 	<div style= 'text-align:left'>
 	<p style="margin-left:5em;">
 	
 	<h2> <font color="white"> Profile </h2>
 	<img src="img/default.jpg" alt="def" width="140" height="140">
-	<h3> Name			: Wilsen Kosasih </h3>
+	<h3> Name			: <?php getName() ?> </h3>
+	<h3> Year			: <?php getUserYear() ?> </h3>
 	<h3> Email Address	: <?php echo $_SESSION['user_email']; ?></h3>
-	<h3> Join Date		: 2016-11-03 </h3>
+	<h3> Join Date		: <?php getJoinDate() ?> </h3>
 	</font>
 	</p>
 	</div>
