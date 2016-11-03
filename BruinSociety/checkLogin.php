@@ -1,7 +1,7 @@
 
-//Author Sepideh Hashemzadeh 
-<?php
 
+<?php
+//Author Sepideh Hashemzadeh 
  if(!isset($_SESSION)) 
     { 
         session_start(); 
