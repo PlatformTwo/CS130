@@ -24,15 +24,26 @@ Yomer-Stylish Landing Page Template
 		<ul class="menu">
 		<li class="btMenu">
 		<a href="javascript:void(0)">MENU</a></li>
-		<li class="menuItem"><a href="index.html">Home</a></li>
+		<li class="menuItem"><a href="index.php">Home</a></li>
 		<li class="menuItem"><a href="#">Functions</a></li>
 		<li class="menuItem"><a href="#">Mission</a></li>
 		<li class="menuItem"><a href="#">Features</a></li>
-		<li class="menuItem"><a href="login.html">Register</a></li>
-		<li class="menuItem"><a href="login.html">Login</a></li>
+<!--		<li class="menuItem"><a href="login.php">Register</a></li>-->
+<!--		<li class="menuItem"><a href="login.php">Login</a></li>-->
 		<li class="menuItem"><a href="http://my.ucla.edu/">Contact us</a></li>
 		
 		</ul>
+    <link rel="stylesheet" href="styles/css_login.css" media="all"/>
+    <form method="post" action="" id="form1">
+                    <strong><font color="white"><b>Email: </b></font></strong>
+         
+                <input type ="email" name="u_email" placeholder="Email" required="required"/>
+                    
+        <strong><font color="white"><b>Password: </b></font></strong>
+                    <input type="password" name="u_pass" placeholder="********" required="required"/>
+                <button name="login">Login</button>  
+                 
+                </form>
 		</div>
   
   <!-- WRAPPER STARTS HERE-->
@@ -74,6 +85,24 @@ Yomer-Stylish Landing Page Template
 
 </header><!-- /HEADER ENDS HERE-->
 <!-- ABOUT US STARTS HERE-->
+<section class='register'>
+<div>
+    <td>
+    <?php
+//main page that connects different components 
+//Author Sepideh Hashemzadeh
+session_start();
+include ("functions/functions.php");
+
+include ("template/content.php");
+
+include("CheckLogin.php");
+//session_start();
+//include ("functions/functions.php");
+?></td>
+    </div>
+
+</section>
 <section class='aboutus' id='about'>
 <div class='container'>
 <div class="row">
@@ -183,68 +212,17 @@ Yomer-Stylish Landing Page Template
 	
 	<!-- FOOTER STARTS HERE-->
 
-=======
-//Author Sepideh Hashemzadeh 
-<!--content area starts-->
-        <div id="content">
-            <div>
-                <img src="images/images_home.png" style="float:left; margin-right:40px;"/>
-            </div>
-            <div id="form2">
-                <form action="" method="post">
-                    <h2>Sign Up Here</h2>
-                    <table>
-                        <tr>
-                            <td align="right">UID:</td>
-                            <td>
-                            <input type="text" name="u_id" placeholder="Enter your university ID" required="required"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">Name:</td>
-                            <td>
-                            <input type="text" name="u_name" placeholder="Enter your name" required="required"/>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td align="right">Password:</td>
-                            <td>
-                            <input type="text" name="u_pass" placeholder="Enter your password" required="required"/>
-                            </td>
-                        </tr>
-                        
-                        <tr>
-                            <td align="right">Email:</td>
-                            <td>
-                            <input type="email" name="u_email" placeholder="Enter your email" required="required"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="right">Year:</td>
-                            <td>
-                            <select type="text" name="u_year"  required="required">
-                            <option>Select year</option>
-                            <option>Freshman</option>
-                            <option>Sophomore</option>
-                            <option>Junior</option>
-                            <option>Senior</option>
-                            </select>
-                            </td>
-                        </tr>
-                        <tr>
-                        <td>
-                            <td colspan="6">
-                        <button name="sign_up">Sign Up
-                            </button>
-                        </td>
-                        </tr>
-                    </table>
-                </form>
-                <?php 
-                include("user_insert.php");
-                ?>
 
             </div>
         </div>
         <!-- content area ends-->
+
+
+
+
+
+
+
+
+        
+       
