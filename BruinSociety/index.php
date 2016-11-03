@@ -24,7 +24,7 @@ Yomer-Stylish Landing Page Template
 		<ul class="menu">
 		<li class="btMenu">
 		<a href="javascript:void(0)">MENU</a></li>
-		<li class="menuItem"><a href="index.html">Home</a></li>
+		<li class="menuItem"><a href="index.php">Home</a></li>
 		<li class="menuItem"><a href="#">Functions</a></li>
 		<li class="menuItem"><a href="#">Mission</a></li>
 		<li class="menuItem"><a href="#">Features</a></li>
