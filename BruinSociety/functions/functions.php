@@ -20,7 +20,7 @@
             $run_email=mysqli_query($con,$get_email);
             $check=mysqli_num_rows($run_email);
             if($check==1){
-//                echo "<h2> This email is already registered!</h2>";
+
                 echo "<script>alert('Email is already registered, please try another!')</script>";
                 exit();
             }
