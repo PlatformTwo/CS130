@@ -1,32 +1,5 @@
-<!DOCTYPE html>
-<?php
-include ("functions/functions.php");
-?>
-<html>
-    <head>
-        <title> My Social Network</title>
-    <link rel="stylesheet" href="styles/style.css" media="all"/>
-    <head>
-<body>
-    <!--container starts-->
-    <div class="container">
-        <!--Head wrap starts-->
-        <div id="head_wrap">
-            <!--Header starts-->
-            <div id="header">
-                <img src="images/images.png" style="float:left"/>
-                <form method="post" action="" id="form1">
-                    <strong>Email: </strong>
-                <input type ="email" name="email" placeholder="Email" required="required"/>
-                    <strong>Password:</strong>
-                    <input type="password" name="pass" placeholder="********" required="required"/>
-                <input type="submit" name="sub" value="Login"/>  
-                 
-                </form>
-            </div>
-        </div>
-        <!--Header end-->
-        <!--content area starts-->
+//Author Sepideh Hashemzadeh 
+<!--content area starts-->
         <div id="content">
             <div>
                 <img src="images/images_home.png" style="float:left; margin-right:40px;"/>
@@ -82,16 +55,9 @@ include ("functions/functions.php");
                         </tr>
                     </table>
                 </form>
-                <?php InsertUser();?>
+                <?php 
+                include("user_insert.php");
+                ?>
             </div>
         </div>
         <!-- content area ends-->
-        <div id="footer">
-        <h2>&copy; 2016 Sepideh Hashemzadeh</h2>
-        </div>
-    </div>
-    <!--container wrap ends-->
-
-
-</body>
-</html>

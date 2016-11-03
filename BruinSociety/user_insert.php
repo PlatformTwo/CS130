@@ -1,8 +1,6 @@
 <?php
-    $con=mysqli_connect("127.0.0.1","root","","social_network") or die ("Connection was not established");
-    function InsertUser(){
-        global $con;
-        if(isset($_POST['sign_up'])){
+include("includes/connection.php");
+if(isset($_POST['sign_up'])){
 //          
             $id=mysqli_real_escape_string($con,$_POST['u_id']);
             $name=mysqli_real_escape_string($con,$_POST['u_name']);
@@ -15,6 +13,7 @@
             $get_email="select * from users where user_email='$email'";
             $run_email=mysqli_query($con,$get_email);
             $check=mysqli_num_rows($run_email);
+            
             if($check==1){
 //                echo "<h2> This email is already registered!</h2>";
                 echo "<script>alert('Email is already registered, please try another!')</script>";
@@ -29,10 +28,10 @@
                 $run_insert=mysqli_query($con,$insert);
             
             if($run_insert){
+                $_SESSION['user_email']=$email;
                 echo "<script>alert('Registration successful!')</script>";
                 echo"<script>window.open('home.php','_self')</script>";
             }
         }
-    }
     }
 ?>
