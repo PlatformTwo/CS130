@@ -25,31 +25,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+/*
 body {
 	line-height: 1;
     background-color:#E6E6FA;
 }
+*/
 
-.container{
-    margin:0
-    padding:0
-    background-color:#E6E6FA;
-}
-#head_wrap{
-    width:100%
-    height:100px;
-/*    margin:0 auto;*/
-    border-bottom:5px solid brown;
-    padding: 0;
-    background:#1E90FF;
-}
-#header {
-    margin:0 auto;
-    padding:10px;
-/*    width:1000px;*/
-    height: 200px;
-   
-}
+
+
 #form1 {
     float:right;
     line-height:10 px;
@@ -61,29 +45,3 @@ body {
     height:20px;
     padding:10px;
 }*/
-#content{
-    width:2000px
-    height:100 px
-    margin:0 auto;
-    float:right;
-    margin-bottom:280px;
-    margin-top:100px;
-   
-}
-#form2 {
-    float:right;
-    margin-top=20px;
-}
-#footer {
-    width:100%;
-    height:40px;
-/*    padding:10px;*/
-    background:#1E90FF;
-    border-top:5px solid brown;
- 
-    
-}
-#footer h2{
-    text-align:center;
-    padding-top:3px;
-}

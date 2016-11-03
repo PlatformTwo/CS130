@@ -30,7 +30,7 @@ if(isset($_POST['sign_up'])){
             if($run_insert){
                 $_SESSION['user_email']=$email;
                 echo "<script>alert('Registration successful!')</script>";
-                echo"<script>window.open('home.php','_self')</script>";
+                echo"<script>window.open('index2.php','_self')</script>";
             }
         }
     }

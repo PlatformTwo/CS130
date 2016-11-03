@@ -26,6 +26,7 @@ div.search button{
 div.search button:hover{
 	color:#000;
 }
+
 div.search div.control-group{
 	position:relative;
 	text-align:right;

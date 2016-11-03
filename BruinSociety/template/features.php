@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,7 +33,8 @@ Yomer-Stylish Landing Page Template
 		<li class="menuItem"><a href="http://my.ucla.edu/">Contact us</a></li>
 		
 		</ul>
-    <link rel="stylesheet" href="styles/css_login.css" media="all"/>
+<!--    <link rel="stylesheet" href="styles/css_login.css" media="all"/>-->
+<!--
     <form method="post" action="" id="form1">
                     <strong><font color="white"><b>Email: </b></font></strong>
          
@@ -43,6 +45,7 @@ Yomer-Stylish Landing Page Template
                 <button name="login">Login</button>  
                  
                 </form>
+-->
 		</div>
   
   <!-- WRAPPER STARTS HERE-->
@@ -84,22 +87,26 @@ Yomer-Stylish Landing Page Template
 
 </header><!-- /HEADER ENDS HERE-->
 <!-- ABOUT US STARTS HERE-->
+<!--
 <section class='register'>
 <div>
     <td>
     <?php
 //main page that connects different components 
 //Author Sepideh Hashemzadeh
-session_start();
-include ("functions/functions.php");
-include ("template/content.php");
-include("CheckLogin.php");
+//session_start();
+//include ("functions/functions.php");
+//
+//include ("template/content.php");
+//
+//include("CheckLogin.php");
 //session_start();
 //include ("functions/functions.php");
 ?></td>
     </div>
 
 </section>
+-->
 <section class='aboutus' id='about'>
 <div class='container'>
 <div class="row">
@@ -213,6 +220,8 @@ include("CheckLogin.php");
             </div>
         </div>
         <!-- content area ends-->
+
+
 
 
 

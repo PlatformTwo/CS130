@@ -1,7 +1,7 @@
 
-//Author Sepideh Hashemzadeh 
-<?php
 
+<?php
+//Author Sepideh Hashemzadeh 
  if(!isset($_SESSION)) 
     { 
         session_start(); 
@@ -21,7 +21,7 @@ if(isset($_POST['login'])){
     if($check==1){
         $_SESSION['user_email']=$email;
         //redirects to home page
-        echo "<script>window.open('home.php','_self')</script>";
+        echo "<script>window.open('index2.php','_self')</script>";
     }
         else{
             echo "<script>alert('Password or email is not correct!')</script>";
