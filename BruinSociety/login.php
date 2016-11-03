@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 <?php
 //main page that connects different components 
@@ -16,10 +14,17 @@ include_once("CheckLogin.php");
 //session_start();
 //include ("functions/functions.php");
 
- session_start();
- include_once ("functions/functions.php");
-
+// session_start();
+// include_once ("functions/functions.php");
+?>
 </html>
+
+
+
+
+        
+       
+
 
 
 
