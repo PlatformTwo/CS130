@@ -1,7 +1,8 @@
-//Author Sepideh Hashemzadeh
+
 <!DOCTYPE html>
 
 <html>
+
     <head>
         <title> My Social Network</title>
     <link rel="stylesheet" href="styles/style.css" media="all"/>
