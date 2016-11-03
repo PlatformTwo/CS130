@@ -44,11 +44,6 @@
         {
             return $FallQtrStart;
         }
-
-        return -1;
-
-
-
     }
 
 ?>

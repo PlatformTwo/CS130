@@ -1,7 +1,5 @@
 
 
-
-
 <!DOCTYPE html>
 <?php
 //main page that connects different components 
@@ -20,6 +18,13 @@ include_once("CheckLogin.php");
 // include_once ("functions/functions.php");
 ?>
 </html>
+
+
+
+
+        
+       
+
 
 
 
