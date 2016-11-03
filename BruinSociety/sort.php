@@ -20,5 +20,34 @@
 		</form>
 
 		</p>
+	<?php
+			$sortOpt=0;
+			if(isset($_POST['sort']))
+			{
+				switch($_POST['sortOpt'])
+				{
+					case AscDate:
+						$sortOpt = 2;
+						break;
+					case DesDate:
+						$sortOpt = 1;
+						break;
+					case AscUN:
+						$sortOpt = 3;
+						break;
+					case DesUN:
+						$sortOpt = 4;
+						break;
+					default:
+						break;
+				}
+				PrintSocietyPosts(1,$sortOpt);
+			}
+		?>
+
+
+		<br><br><p>Andrew Lin</p>
+	</body>
+</html>
 
 		
