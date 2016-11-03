@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <?php
+//main page that connects different components 
+//Author Sepideh Hashemzadeh
+<?php
+session_start();
 include ("functions/functions.php");
 ?>
+
 <html>
     <head>
         <title> My Social Network</title>
@@ -81,13 +86,19 @@ include ("functions/functions.php");
                             </select>
                             </td>
                         </tr>
-						<tr>
-                            <td align="right">user agreement:</td>
-                            <td>
-                            <input type="Text" name="u_email" placeholder="Enter I agree" required="required"/>
-                            <a href="http://www.deanofstudents.ucla.edu/Academic-Integrity"> User agreement form</a>
-							</td>
-                        </tr>
+
+
+			<tr>
+				<td align="right">user agreement:</td>
+				<td>
+				<select type="Text" name="u_agree"  required="required">
+                            	<option>I understand and agree</option>
+                            	<option>I Disagree </option>
+                            	<td>	
+                           <a href="http://www.deanofstudents.ucla.edu/Academic-Integrity">User agreement</a>
+                             </td>
+			    	</td>
+			 </tr>
 
                         <tr>
                         <td>
