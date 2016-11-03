@@ -18,9 +18,22 @@
 				</form>
 
 				<?php 
-				getSocietyMembers();
+				    getSocietyMembers();
 				?>
 
+                <form action="" method="post">
+					<h2>Find societies of a user given a user id</h2>
+					<input type="text" name="u_id" placeholder="Enter the user id" require="required" />
+					<button name="getSocieties">Search</button>
+				</form>
+
+        		<?php 
+				    getSocieties();
+				?>
+
+                <?
+                    getNumMembers(1);
+                ?>
 			</div>
 		</div>
 	</body>
