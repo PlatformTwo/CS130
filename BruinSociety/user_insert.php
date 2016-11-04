@@ -1,7 +1,6 @@
 <?php
 include("includes/connection.php");
 if(isset($_POST['sign_up'])){
-//          
             $id=mysqli_real_escape_string($con,$_POST['u_id']);
             $name=mysqli_real_escape_string($con,$_POST['u_name']);
             $pass=mysqli_real_escape_string($con,$_POST['u_pass']);

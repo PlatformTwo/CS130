@@ -25,7 +25,11 @@ Yomer-Stylish Landing Page Template
 <body>
 
 <div class="nav">
-		<div class='logo'></div>
+		    <div>
+
+            <h1 style="float:left; margin-right:40px; padding:20px; color:	#F0F8FF;"> Bruin Society </h1>
+
+            </div>
 		<ul class="menu">
 		<li class="btMenu">
 		<a href="javascript:void(0)">MENU</a></li>
@@ -61,41 +65,7 @@ Yomer-Stylish Landing Page Template
   <!-- WRAPPER STARTS HERE-->
 <div class='wrapper'>
 
-<header><!-- HEADER STARTS HERE-->
- <br>
- <br>
- <br>
- <br>
- <br>
-<div class='container titles yomer-text-center'>
-<h1 data-scroll-reveal="wait 0.25s, then enter top and move 40px over 1s">Start Your Student Life Here</h1>
-<div class='subhead'>
- <p>The best study resource website at UCLA,Please register and share your information everything here is <b>free</b>!!</p> 
- <br>
- <br>
- <br>
- <br>
- <br>
- <br>
- <!--<div class='buttons'>
-<form method="POST" action="#">
-                        <button class="form-submit googleplus" type="submit" title="Continue with Google+" href="http://my.ucla.edu/"></button>
-					
-                    </form>
-					<form method="POST" action="#">
-                        <button class="form-submit facebook" type="submit" title="Continue with Facebook"></button>
-						
-                    </form>                 
-					<form method="GET" action="#">
-                        <button class="form-submit email" type="submit" title="Continue with Email"></button>
-                    </form>
-</div> 
-</div>
-</div>
-<!--div class=" logos"><img src="img/logos.png"></div-->
- <a class="godown animate" href="#first">Down</a>
 
-</header><!-- /HEADER ENDS HERE-->
 <!-- ABOUT US STARTS HERE-->
 <!--
 <section class='register'>
@@ -121,10 +91,7 @@ Yomer-Stylish Landing Page Template
 <div class='container'>
 <div class="row">
                 <div class="col-md-12 yomer-text-center">
-                    <h2>What We Offer</h2>
-                    <p class="bigtext">
-                        Different from normal UCLA Test Bank or Piazza,we offer all course resource share,find your classmate,senior student in your major or the former TA in your class,Powerful messager function,and discussion board which never close for all the class here at UCLA.
-                    </p>
+                    <h2 style="margin:50px;">Dashboard</h2>
                 </div>
             </div>
             <div class="row">
@@ -178,49 +145,7 @@ Yomer-Stylish Landing Page Template
 </div>
 
 </section>
-<!-- /ABOUT US ENDS HERE HERE-->
-<!-- OUR MISSION STARTS HERE-->
-<section class="ourmission " id='mission'>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 yomer-text-center">
-                    <h3>“We will finish this website in next 7 weeks. ”</h3> 
-                    <small>UCLA COMPUTER SCIENCE: KIRK ZHANG</small>
-                </div>
-            </div>
-        </div>
-    </section>
 
-<!--/ OUR MISSION ENDS HERE-->
-<!--OUR FEATURE STARTS HERE-->
-<section class="feature" id='whyus'>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 yomer-text-center">
-                    <h2>Why You’ll Love Us</h2>
-                    <p class="bigtext">Different from normal UCLA Test Bank or Piazza,we offer all course resource share,find your classmate,senior student in your major or the former TA in your class,Powerful messager function,and discussion board which never close for all the class here at UCLA.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-<!--/ OUR FEATURE ENDS  HERE-->
-<!--WHY CHOSE STARTS HERE HERE-->
-
-<section class="whychose " id='whychose'>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 yomer-text-center">
-                    
-            
-                <div class="col-md-12 yomer-text-center">
-                    <h3> Different from normal UCLA Test Bank or Piazza,we offer all course resource share,find your classmate,senior student in your major or the former TA in your class,Powerful messager function,and discussion board which never close for all the class here at UCLA.</h3> 
-                    <small>UCLA COMPUTER SCIENCE: KIRK ZHANG</small>
-                </div>
-            </div>
-        </div>
-		</div>
-    </section>
 	
 	
 	
