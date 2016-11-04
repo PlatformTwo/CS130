@@ -18,9 +18,11 @@ BruinSociety
 </head>
 
 <body>
+
+    
  
 <div class="nav">
-		<div class='logo'></div>
+
 		<ul class="menu">
 		<li class="btMenu">
 		<a href="javascript:void(0)">MENU</a></li>
@@ -31,10 +33,28 @@ BruinSociety
 		<li class="menuItem"><a href="login.html">Register</a></li>
 		<li class="menuItem"><a href="login.html">Login</a></li>
 		<li class="menuItem"><a href="http://my.ucla.edu/">Contact us</a></li>
+
 		
 		</ul>
-		</div>
-  
+        <div>
+            <style> 
+                form {
+                    margin: 10px;
+                }
+            </style>
+            <form method="post" action="" id="form1">
+            <strong style="color: 	#F0F8FF"> Email: </strong>
+            <input type ="email" name="email" placeholder="Email" required="required"/>
+            <strong style="color: 	#F0F8FF">Password:</strong>
+            <input type="password" name="pass" placeholder="********" required="required"/>
+            <input type="submit" name="sub" value="Login"/>   
+            </form>
+            <?php 
+                include("user_insert.php");
+            ?>
+        </div>
+</div>
+
   <!-- WRAPPER STARTS HERE-->
 <div class='wrapper'>
 
@@ -128,7 +148,7 @@ BruinSociety
 
 </section>
 
-	
+
 	
 	<!-- FOOTER STARTS HERE-->
 
@@ -138,6 +158,7 @@ BruinSociety
             <div>
 
             <img src="images/images_home.png" style="float:left; margin-right:40px; padding:20px; border-radius: 10%;"/>
+
             </div>
             <div id="form2">
                 <style>
@@ -154,7 +175,7 @@ BruinSociety
                     }
                 </style>
                 <form action="" method="post">
-                    <h2 style="color:	#F0F8FF;">Sign Up Here</h2>
+                    <h2 style="color:#F0F8FF;">Sign Up Here</h2>
                     <table>
                         <tr>
                             <td align="right" style="color:	#F0F8FF;">UID:</td>
@@ -163,27 +184,31 @@ BruinSociety
                             </td>
                         </tr>
                         <tr>
-                            <td align="right" style="color:	#F0F8FF;">Name:</td>
+
+                            <td align="right" style="color:#F0F8FF;">Name:</td>
                             <td>
                             <input type="text" name="u_name" placeholder="Enter your name" required="required"/>
                             </td>
                         </tr>
                         
                         <tr>
-                            <td align="right" style="color:	#F0F8FF;">Password:</td>
+
+                            <td align="right" style="color:#F0F8FF;">Password:</td>
                             <td>
                             <input type="text" name="u_pass" placeholder="Enter your password" required="required"/>
                             </td>
                         </tr>
                         
                         <tr>
-                            <td align="right" style="color:	#F0F8FF;"> Email:</td>
+
+                            <td align="right" style="color:#F0F8FF;">Email:</td>
                             <td>
                             <input type="email" name="u_email" placeholder="Enter your email" required="required"/>
                             </td>
                         </tr>
                         <tr>
-                            <td align="right" style="color:	#F0F8FF;">Year:</td>
+
+                            <td align="right" style="color:#F0F8FF;">Year:</td>
                             <td>
                             <select type="text" name="u_year"  required="required">
                             <option>Select year</option>
