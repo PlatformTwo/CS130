@@ -133,7 +133,7 @@ Yomer-Stylish Landing Page Template
                     <h3>Create Society</h3>
                     <small>Tools</small>
                     <p>
-					<a href="application.html"></a>
+					<a href="subclass/application.html"></a>
                         Create a new Society here for your major or your Club -- UCLA Student Commputy website
                     </p>
                     <p>
@@ -141,14 +141,14 @@ Yomer-Stylish Landing Page Template
                     </p>
                 </div>
                 <div class="col-md-3 yomer-text-center">
-                    <a class="icon-widget icon-follow" href="join.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Follow</a>
+                    <a class="icon-widget icon-follow" href="subclass/join.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Follow</a>
                     <h3>Join Society</h3>
                     <small>Tools</small>
                     <p>
                      Join the exist Society -- UCLA Student Commputy website
                     </p>
                     <p>
-                        <a class="link-more" href="#">Learn More</a>
+                        <a class="link-more" href="subclass/message">Learn More</a>
                     </p>
                 </div>
                 <div class="col-md-3 yomer-text-center">
@@ -163,7 +163,7 @@ Yomer-Stylish Landing Page Template
                     </p>
                 </div>
                 <div class="col-md-3 yomer-text-center">
-                    <a class="icon-widget icon-recommend" href="discussion.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Recommend</a>
+                    <a class="icon-widget icon-recommend" href="subclass/discussion.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Recommend</a>
                     <h3>Discussion</h3>
                     <small>Content Tools</small>
                     <p>
