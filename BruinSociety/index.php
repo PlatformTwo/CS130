@@ -112,7 +112,7 @@ include("CheckLogin.php");
             </div>
             <div class="row">
                 <div class="col-md-3 yomer-text-center">
-                    <a class="icon-widget icon-share" href="application.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Share</a>
+                    <a class="icon-widget icon-share" href="subclass/application.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Share</a>
                     <h3>Create Society</h3>
                     <small>Tools</small>
                     <p>
@@ -124,7 +124,7 @@ include("CheckLogin.php");
                     </p>
                 </div>
                 <div class="col-md-3 yomer-text-center">
-                    <a class="icon-widget icon-follow" href="join.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Follow</a>
+                    <a class="icon-widget icon-follow" href="subclass/join.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Follow</a>
                     <h3>Join Society</h3>
                     <small>Tools</small>
                     <p>
@@ -135,7 +135,7 @@ include("CheckLogin.php");
                     </p>
                 </div>
                 <div class="col-md-3 yomer-text-center">
-                    <a class="icon-widget icon-market" href="#" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Market</a>
+                    <a class="icon-widget icon-market" href="subclass/message.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Market</a>
                     <h3>Message</h3>
                     <small>Tools</small>
                     <p>
@@ -146,7 +146,7 @@ include("CheckLogin.php");
                     </p>
                 </div>
                 <div class="col-md-3 yomer-text-center">
-                    <a class="icon-widget icon-recommend" href="discussion.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Recommend</a>
+                    <a class="icon-widget icon-recommend" href="subclass/discussion.html" data-scroll-reveal="wait 0.25s, then enter top and move 70px over 1s">Recommend</a>
                     <h3>Discussion</h3>
                     <small>Content Tools</small>
                     <p>
