@@ -1,7 +1,7 @@
 <?php
     // This php file is responsible for requests that involves handling the relationship between societies and members
     $con=mysqli_connect("127.0.0.1","root","","social_network") or die ("Connection was not established");
-
+    error_reporting(E_ALL ^ E_NOTICE);
     // TODO: add API to check if a user is in a society
 
     /**
@@ -16,6 +16,22 @@
             print"<br>";
             print "$row[id] ";
             print "$row[name]";
+            print "<br><br>";
+        }
+    }
+
+    /**
+    * listSocieties lists all currently registered societies
+    * @return void The function returns void and prints the ids and names of the registered societies
+    */
+    function listUsers() {
+        global $con;
+        $query = "select * from users";
+        $run_query = mysqli_query($con, $query);
+        while($row = mysqli_fetch_assoc($run_query)) {   
+            print"<br>";
+            print "$row[user_id] ";
+            print "$row[user_name]";
             print "<br><br>";
         }
     }
@@ -120,7 +136,14 @@
         $result = mysqli_query($con, $query);
         $row = mysqli_fetch_assoc($result);
         $count = $row[user_count];
-        echo $count;
         return $count;
+    }
+
+    function printNum() {
+        global $con;
+        if(isset($_POST['getNum'])) {
+            $numOfMembers = getNumMembers($_POST['s_id']);
+            echo "There are $numOfMembers members in the society";
+        }
     }
 ?>
